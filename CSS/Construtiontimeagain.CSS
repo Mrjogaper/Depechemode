@@ -37,6 +37,6 @@ div.gallery {
     cursor: pointer;
   }
   body {
-    background: royalblue url("imagens/Construtionbackgroundagain.png") repeat fixed left top;
+    background: royalblue url("/imagens/Construtionbackgroundagain.png") repeat fixed left top;
     background-size: 100% 100%;
   }

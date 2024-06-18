@@ -39,6 +39,6 @@
         }
 
       body {
-          background: gray url("imagens/Justabackground.png") repeat fixed left top;
+          background: gray url("/imagens/Justabackground.png") repeat fixed left top;
           background-size: 100px 100px;
         }
