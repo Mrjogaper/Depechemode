@@ -1,11 +1,16 @@
-p,ol,li {color:whitesmoke;text-align: justify;}
+:root {
+  --cor-fundo: rgb(200, 40, 40);
+  --cor-letra: whitesmoke;
+}
 
-h1,h2,h3 {color:whitesmoke;text-align: justify;}
+p,ol,li {color: var(--cor-letra);text-align: justify;}
+
+h1,h2,h3 {color: var(--cor-letra);text-align: justify;}
 details > summary {
       padding: 4px;
       width: 160px;
       border: none;
-      color: whitesmoke;
+      color: var(--cor-letra);
       cursor: pointer;
       margin: 10px;
       text-align: center;
@@ -18,9 +23,9 @@ div.flex-container {
 }
 div.gallery {
   margin: 5px;
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--cor-letra);
   width: 330px;
-  background: rgb(200, 40, 40);
+  background: var(--cor-fundo);
 }
       
 div.gallery img {
@@ -31,15 +36,15 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: justify;
-  color:whitesmoke;
+  color: var(--cor-letra);
 }
 
 a:link, a:visited {
-  color:whitesmoke;
+  color: var(--cor-letra);
 }
 
 body {
-  background: rgb(200, 40, 40) url("Spelledbackground.png") repeat fixed left top;
+  background: var(--cor-fundo) url("Spelledbackground.png") repeat fixed left top;
   background-size: 100% 100%;
 }
 
@@ -47,9 +52,17 @@ footer {
   margin: 5px;
   padding: 50px;
   border: 1px solid whitesmoke;
-  background: rgb(200, 40, 40);
-  color: whitesmoke;
+  background: var(--cor-fundo);
+  color: var(--cor-letra);
   width: auto;
   height: auto;
   border-radius: 15px;
+}
+
+img.capa {
+  width:360px;
+  height:360px;
+  float:right;
+  margin: 5px;
+  border: 1px solid var(--cor-letra);
 }
